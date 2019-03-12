@@ -1,6 +1,286 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-</body>
+﻿<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Noda lab homepage</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    .bib_box{
+        margin-left:30px;
+    }
+    .bib_item{
+        list-style-type: none;
+        margin-bottom : 10px;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout__header-row">
+            <h5>福島工業高等専門学校<br />機械システム工学科　野田研究室</h5>
+        </div>
+        <div class="mdl-layout__header-row">
+          <!--  <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover">
+            <img src="images/helios_hp.jpg" width="64" height="48" alt="nodalab_cover"> -->
+        </div>
+       <!-- <div class="mdl-layout--large-screen-only mdl-layout__header-row"> -->
+       <!-- </div> -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Top</a>
+          <a href="#features" class="mdl-layout__tab">概要</a>
+          <a href="#members" class="mdl-layout__tab">メンバー</a>
+          <a href="#researches" class="mdl-layout__tab">研究</a>
+          <a href="#journals" class="mdl-layout__tab">業績</a>
+          <a href="#education" class="mdl-layout__tab">教育活動</a>
+          <a href="#contact" class="mdl-layout__tab">連絡先</a>
+          <a href="#" class="mdl-layout__tab">English (Construction)</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+              <div class="mdl-cell mdl-cell--12-col">
+                  <div  style="text-align:center">
+                      <img src="images/hp_logo.svg" width="400" height="300" alt="nodalab_cover">
+                  </div>
+                  <h4>お知らせ</h4>
+                  <p>(2019.03.07)県内大学発　技術シーズ説明会で野田が講演しました．</p>
+                  <p>(2019.02.13)いわき市立平第五小学校に出前授業を行いました．</p>
+                  <p>(2018.12.23)第二ブロック研究交流会に参加しました．</p>
+                  <p>(2018.12.13〜15)計測自動制御工学会SI部門で学生が発表しました．</p>
+                  <p>(2018.06.03〜05)ロボティクスメカトロニクス講演会2018で野田が発表しました．</p>
+              </div>
+          </section>
+          
+        </div>
+        
+        <div class="mdl-layout__tab-panel" id="features">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>概要</h4>
+              福島高等専門学校機械システム工学科野田研究室のホームページです．
+                学校からの正式な許可がないためあくまで野田個人運営のサイトです．
+               <h5>その他</h5>
+                <ul>
+                    <li>本ページへのリンクはフリーです．</li>
+                    <li>本ページへの無断転載を固く禁じます．</li>
+              </ul>
+
+            </div>
+          </section>
+        </div>
+        
+        <div class="mdl-layout__tab-panel" id="members">
+            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4>メンバー</h4><hr />
+                    <h5>助教</h5>
+                    <h6>野田　幸矢</h6>
+                    <img src="images/snoda_m.jpg" width="150" height="150" alt="nodalab_cover">
+                    <ul>
+                            <li>2014年，東京工業大学大学院　理工学研究科　機械宇宙システム専攻　修士課程修了</li>
+                            <li>2017年，東京工業大学大学院　総合理工学研究科　メカノマイクロ工学専攻　単位取得退学</li>
+                            <li>2017年，福島工業高等専門学校　機械システム工学科　助教</li>
+                            <li>現在，博士（工学）</li>
+                    </ul>
+                    <hr />
+                    <h5>本科５年</h5>
+                    <p>
+                    工事中
+                    </p>
+                    <hr />
+                    <h5>本科４年</h5>
+                    <p>
+                    工事中
+                    </p>
+                    
+                </div>
+            </section>
+        </div>
+        
+        <div class="mdl-layout__tab-panel" id="journals">
+            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4>業績</h4>
+                    <a href="https://researchmap.jp/sna89/?lang=japanese" target="_blank">Research map</a>のサイトをご覧ください．
+                </div>
+            </section>
+        </div>
+        
+        <div class="mdl-layout__tab-panel" id="researches">
+            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4>研究内容</h4>
+                    災害救助ロボット，医療ロボットに従事しています．
+                    構造力学，機構学的切り口で問題を解決することを得意としています．
+                    <ul class="toc">
+                        <h5>これまで取り組んできた内容</h5>
+                        <a href="#force_senser">鉗子用力センサの開発</a>
+                        <a href="#helios_x"> 原子力災害対応ロボットHELIOS Xの開発</a>
+                    </ul>
+                    
+                    <hr />
+                    <h5 id="force_senser"> 鉗子用力センサの開発</h5>
+                    <div  style="text-align:center">
+                        <img src="images/cover_diaphragm_g4.svg" width="400" height="400" alt="nodalab_cover">
+                    </div>
+                
+                    鉗子用力センサの構造を研究しています．
+                    一般に，力センサの長手方向の分解能は横手方向と比べ悪化します．
+                    提案する構造により横手方向の力の分解能が長手方向と同程度にできます．<br />
+                    <a href="#researches">研究トップに戻る</a>
+                    <hr />
+                    
+                    <h5 id="helios_x"> 原子力災害対応ロボットHELIOS Xの開発</h5>
+                    <div  style="text-align:center">
+                        <img src="images/helios_hp.jpg" width="400" height="300" alt="nodalab_cover">
+                            </div>
+                    
+                    原子力災害の初期探索用に開発したロボットです．
+                    クランク車輪と呼ばれる特殊な移動機構と単腕を組み合わせています．
+                    階段踏破などの不整地踏破，ドア開扉など様々なことができます．<br />
+                    <a href="#researches">研究トップに戻る</a>
+                
+                
+                </div>
+                
+               
+                
+            </section>
+        </div>
+        
+        <div class="mdl-layout__tab-panel" id="journals">
+            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4>業績</h4>
+                    <a href="https://researchmap.jp/sna89/?lang=japanese" target="_blank">Research map</a>のサイトをご覧ください．
+                </div>
+            </section>
+        </div>
+
+        <div class="mdl-layout__tab-panel" id="education">
+            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4>教育活動</h4> <hr />
+                    <h5>通常授業</h5>
+                    <ul>
+                        <li>機械製図II（予定）</li>
+                        <li>設計製図I</li>
+                        <li>モノづくり実習（予定）</li>
+                        <li>応用設計製図</li>
+                        <li>応用メカトロニクス（専攻科科目）</li>
+                    </ul>
+                    <hr />
+                    <h5>出前授業</h5>
+                    ものをつくる楽しさを体感してもらうため，小・中学生対象に出前授業を行なっています．
+                    
+                    <h6>かわさきロボット</h6>
+                    ※画像準備中<br />
+                    2015年度のかわさきロボット競技会に出場したロボットです．
+                    足機構で走り角で相手のロボットを突き飛ばします．
+
+                    <h6>指南車</h6>
+                    ※画像準備中<br />
+                    方位磁針を用いなくても一定方向を指し続けるからくり機構です．
+                    
+                    <h6>機械式マスタースレーブ</h6>
+                    ※画像準備中<br />
+                    完全に機構のみで動かせる操り型のロボット（？）です．
+                    工場で用いられるロボットアームの形をしています．
+
+                </div>
+            </section>
+        </div>
+        
+        <div class="mdl-layout__tab-panel" id="contact">
+            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4>連絡先</h4>
+                    <p>snoda[at]fukushima-nct.ac.jp</p>
+                    <p>※スパム防止のため[at]をアットマーク(@)に変更してください</p>
+                </div>
+            </section>
+        </div>
+        
+        <footer class="mdl-mega-footer">
+          
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              外部サイト
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">福島工業高等専門学校(現在リンク確認中)</a></li>
+              <!-- <li><a href="#">機械システム工学科</a></li> -->
+             <!--  <li><a href="#">Youtube</a></li> -->
+            </ul>
+          </div>
+              <div id="copy">Copyright &copy; 2019 Noda laboratory. All rights reserved.</div>
+        </footer>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
 </html>
